@@ -1,18 +1,1 @@
-# Dependencies
-node_modules/
-
-# Env (do not commit email password)
-.env
-.env.local
-.env.*.local
-
-# Build
-dist/
-
-# Logs
-*.log
-npm-debug.log*
-
-# Editor
-.DS_Store
-*.local
+node_modules

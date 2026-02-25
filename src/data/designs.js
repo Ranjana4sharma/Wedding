@@ -27,6 +27,10 @@ const weddingImages = [
   '/card2.jpeg',
   '/card3.jpeg',
   '/card4.jpeg',
+  '/weeding4.2.jpeg',
+  '/weeding4.4.png',
+  '/weeding6.1.png',
+  '/weeding6.2.png',
 ];
 
 const shopImages = [
