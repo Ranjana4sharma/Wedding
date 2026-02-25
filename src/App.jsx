@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import FloatingWhatsApp from './components/FloatingWhatsApp';
 import Home from './pages/Home';
 import Category from './pages/Category';
 
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="/category/:slug" element={<Category />} />
       </Routes>
       <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }

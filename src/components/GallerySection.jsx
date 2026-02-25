@@ -22,28 +22,35 @@ export default function GallerySection({ designs, categorySlug }) {
   const meta = getCategoryMeta(categorySlug);
 
   return (
-    <section className="py-8 sm:py-12">
-      <div className="flex flex-wrap gap-2 mb-6">
+    <section className="py-6 sm:py-10">
+      <div className="flex flex-wrap gap-2 sm:gap-3 mb-4 sm:mb-6">
         {FILTERS.map((f) => (
           <button
             key={f.value}
             type="button"
             onClick={() => setFilter(f.value)}
-            className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
+            className={`min-h-[44px] px-4 py-2.5 rounded-xl text-sm font-medium transition-colors touch-manipulation ${
               filter === f.value
-                ? 'bg-gray-900 text-white'
-                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                ? 'bg-slate-900 text-white'
+                : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
             }`}
           >
             {f.label}
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+      <div
+        className={`grid gap-3 sm:gap-5 lg:gap-6 ${
+          categorySlug === 'banner' || categorySlug === 'flex'
+            ? 'grid-cols-1 lg:grid-cols-2'
+            : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3'
+        }`}
+      >
         {filtered.map((design) => (
           <DesignCard
             key={design.id}
             design={design}
+            categorySlug={categorySlug}
             onClick={setSelectedDesign}
           />
         ))}

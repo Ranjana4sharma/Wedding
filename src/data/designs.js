@@ -3,7 +3,7 @@
 
 const categoryImages = {
   visiting: '/visting1.avif',
-  wedding: '/wedding1.jpeg',
+  wedding: '/weeding1.1.jpg',
   banner: '/shop1.webp',
   flex: '/flex%20print%201.jpg',
 };
@@ -12,16 +12,17 @@ const categoryImages = {
 const visitingImages = [
   '/visting1.avif',
   '/Visting2.jpg',
-  '/visting3.jpeg',
-  '/visting4.jpeg',
-  '/visting5.jpeg',
-  '/visting6.jpeg',
+  '/visting3.3.jpg',
+  '/visting4.4.jpg',
+  '/visting4.5.jpg',
+  '/visting5.jpg',
+  '/visiting4.6.jpg',
   
 ];
 
 const weddingImages = [
-  '/wedding1.jpeg',
-  '/weeding2.jpeg',
+  '/weeding1.1.jpg',
+  '/weeding2.2.webp',
   '/card1.jpeg',
   '/card2.jpeg',
   '/card3.jpeg',
@@ -30,17 +31,17 @@ const weddingImages = [
 
 const shopImages = [
   '/shop1.webp',
-  '/shop2.jpeg',
-  '/shop3.jpeg',
-  '/shop4.jpeg',
-  '/shop5.jpeg',
+  '/shop1.1.jpg',
+  '/shop1.2.jpg',
+  '/shop1.4.avif',
+  
   '/shop6.jpg',
-  '/shop7.jpeg',
+  '/shop1.3.avif',
 ];
 
 const flexImages = [
   '/flex%20print%201.jpg',
-  '/flex%20print2.jpeg',
+  
 ];
 
 export const categories = [
